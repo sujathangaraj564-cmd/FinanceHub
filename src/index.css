@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #081128;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  color: #d4af37;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+/* HOME */
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  color: #d4af37;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.hero button {
+  margin-top: 50px;
+  padding: 18px 45px;
+  border: none;
+  border-radius: 15px;
+  background: #d4af37;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* LOGIN PAGE */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #16213e, #081128);
+  padding: 20px;
+}
+
+.login-card {
+  width: 400px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  text-align: center;
+}
+
+.login-card h1 {
+  color: #d4af37;
+  font-size: 40px;
+}
+
+.login-card p {
+  margin: 15px 0 35px;
+  color: #ccc;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+.password-box button {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #1f2a48;
+  color: white;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #d4af37;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px);
+}
+
+small {
+  display: block;
+  margin-top: 25px;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .login-card {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .login-card h1 {
+    font-size: 32px;
+  }
+}
